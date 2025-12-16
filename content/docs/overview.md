@@ -3132,12 +3132,12 @@ Enables a specific feature or changes the behaviour of a specific aspect of the 
 
 * `#+feature dynamic-literals`
   * Enables dynamic-literals for types `map` and `[dynamic]T`
-* `#+feature integer-divsion-by-zero:<option>`
+* `#+feature integer-division-by-zero:<option>`
 	* Makes all integer division within this file operation a specific way
-	* `#+feature integer-divsion-by-zero:trap`     -- Trap on division/modulo/remainder by zero
-	* `#+feature integer-divsion-by-zero:zero`     -- `x/0 == 0` and `x%0 == x` and `x%%0 == x`
-	* `#+feature integer-divsion-by-zero:self`     -- `x/0 == x` and `x%0 == 0` and `x%%0 == 0`
-	* `#+feature integer-divsion-by-zero:all-bits` -- `x/0 == ~T(0)` and `x%0 == x` and `x%%0 == x`
+	* `#+feature integer-division-by-zero:trap`     -- Trap on division/modulo/remainder by zero
+	* `#+feature integer-division-by-zero:zero`     -- `x/0 == 0` and `x%0 == x` and `x%%0 == x`
+	* `#+feature integer-division-by-zero:self`     -- `x/0 == x` and `x%0 == 0` and `x%%0 == 0`
+	* `#+feature integer-division-by-zero:all-bits` -- `x/0 == ~T(0)` and `x%0 == x` and `x%%0 == x`
 * `#+feature global-context`
 	* Enable the use of globals that require the `context` to be defined in the global scope
 	* The `context` by default does not exist in the global scope
