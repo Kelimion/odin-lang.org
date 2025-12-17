@@ -4422,7 +4422,7 @@ Key_Descriptions :: #sparse[Key]string {
 
 #### `#force_inline` and `#no_force_inline`
 
-Specify whether a procedure literal or call will be forced to inline (`#force_inline`) or forced to never inline `#force_no_inline`. This is **not** an suggestion to the compiler. If the compiler cannot inline the procedure, it will (currently) silently ignore the directive.
+Specify whether a procedure literal or call will be forced to inline (`#force_inline`) or forced to never inline `#force_no_inline`. This is **not** a suggestion to the compiler. If the compiler cannot inline the procedure, it will (currently) silently ignore the directive.
 
 This is enabled all optization levels except `-o:none` which has all inlining disabled.
 
@@ -4659,7 +4659,7 @@ Foo :: struct {
 
 foos := make([]Foo, num)
 
-// By-value basic ranged-based loop, with implicit indexing
+// By-value basic range-based loop, with implicit indexing
 for v, j in foos {
 	using v
 	fmt.println(j, v, f, i)
