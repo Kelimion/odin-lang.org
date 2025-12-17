@@ -4659,7 +4659,7 @@ Foo :: struct {
 
 foos := make([]Foo, num)
 
-// By-value basic ranged-based loop, with implicit indexing
+// By-value basic range-based loop, with implicit indexing
 for v, j in foos {
 	using v
 	fmt.println(j, v, f, i)
